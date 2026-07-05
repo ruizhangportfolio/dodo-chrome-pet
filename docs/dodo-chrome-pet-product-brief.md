@@ -1,710 +1,336 @@
-# Dodo Chrome Pet  
-## Product Requirements Brief
+# Dodo Chrome Pet Product Brief
 
-**Project type:** Creator-led product experiment / Chrome extension  
-**Role:** Product Manager / Builder / Creator  
-**Domain:** Creator engagement, browser companion, audience retention, Chrome extension, privacy-conscious consumer product  
-**Product status:** Launched on Chrome Web Store  
-**Chrome Web Store:** https://chromewebstore.google.com/detail/dodo-chrome-pet/eckimpmfpfiapdjaogaaglkgbodjandi  
-**YouTube channel:** https://www.youtube.com/@Dodo_the_Ragdoll  
+Dodo Chrome Pet is a Chrome extension that turns Dodo, a YouTube cat-channel mascot, into a lightweight, user-controlled browser companion.
+
+The product is a focused V1 designed to validate whether a creator mascot can become a low-friction daily touchpoint outside the YouTube feed. Instead of asking viewers to wait for new videos, the extension lets fans summon Dodo while browsing, hide him when needed, use lightweight controls, take a gentle break, and return to the YouTube channel through a clear CTA.
+
+This is not intended to be a full virtual-pet platform in V1. The goal is to test install friction, daily companion appeal, creator-channel return behavior, and trust boundaries before investing in heavier features, account systems, monetization, or cross-platform apps.
 
 ---
 
-## 1. Executive Summary
+## Links
 
-Dodo Chrome Pet is a launched Chrome extension that turns Dodo, my real Ragdoll cat and YouTube channel subject, into a calm interactive browser companion.
-
-The product started from a creator-growth problem: short-form content can generate fast discovery, but it does not always create durable audience relationships. When my upload cadence slowed, some viewers left comments asking for more frequent Dodo updates. That revealed a product opportunity: could Dodo become a lightweight daily touchpoint outside the YouTube feed?
-
-This brief demonstrates how I approached the product as a product manager:
-
-- Identified a creator-audience retention problem beyond video publishing cadence.
-- Translated Dodo’s channel identity into a lightweight browser companion concept.
-- Scoped a Chrome extension MVP around calm presence, user-triggered interaction, and privacy-conscious design.
-- Chose Chrome extension as the V1 platform to reduce fan adoption friction, development cost, distribution complexity, and trust barriers.
-- Made product trade-offs around delight vs. distraction, privacy vs. analytics, asset quality vs. launch speed, and Chrome extension vs. desktop app.
-- Launched a free public V1 and defined validation metrics for acquisition, engagement, retention, creator-channel reactivation, and product quality.
-
-Dodo Chrome Pet should not be framed as “a cute cat extension.” It is a creator-led product experiment that tests whether passive video affinity can become a daily companion experience.
+- Chrome Web Store: https://chromewebstore.google.com/detail/dodo-chrome-pet/eckimpmfpfiapdjaogaaglkgbodjandi
+- GitHub Repository: https://github.com/ruizhangportfolio/dodo-chrome-pet
+- YouTube Channel: https://www.youtube.com/@Dodo_the_Ragdoll
 
 ---
 
-## 2. Product Context
+## Product Summary
 
-Dodo is my real cat and the subject of my YouTube channel, Dodo the Half-Tailed Ragdoll. The channel has built a pet-content audience around Dodo’s personality, visual identity, and recurring character moments.
+Dodo Chrome Pet is a Chrome extension that turns Dodo, a YouTube cat-channel mascot, into a lightweight, user-controlled browser companion.
 
-Short-form platforms can create fast exposure, but the relationship between creator and audience often remains dependent on platform feeds and upload cadence. If the creator pauses or slows down, the audience touchpoint disappears until the next video appears in the feed.
+The product is a focused V1 designed to validate whether a creator mascot can become a low-friction daily touchpoint outside the YouTube feed. Instead of asking viewers to wait for new videos, the extension lets fans summon Dodo while browsing, hide him when needed, use lightweight controls, take a gentle break, and return to the YouTube channel through a clear CTA.
 
-For a pet-content creator, this creates a specific challenge:
-
-- Viewers may form emotional attachment to the pet character.
-- The creator may not be able to publish daily at a sustainable pace.
-- The audience relationship mostly lives inside YouTube, TikTok, Instagram, and algorithmic feeds.
-- Differentiation becomes difficult because many pet channels rely on similar video formats.
-- There is limited product surface outside social platforms.
-
-Dodo Chrome Pet explores whether a creator mascot can become a lightweight browser companion that fans can see during daily browsing or working, creating a small recurring touchpoint between uploads.
+This is not intended to be a full virtual-pet platform in V1. The goal is to test install friction, daily companion appeal, creator-channel return behavior, and trust boundaries before investing in heavier features, account systems, monetization, or cross-platform apps.
 
 ---
 
-## 3. Product Thesis
+## Product Hypothesis
 
-Creator audiences do not only follow content. They form attachments to characters, rituals, and recurring emotional cues.
+Creator audiences build attachment to recurring characters, but Shorts engagement can be fragile when posting frequency drops. A lightweight browser companion can extend the creator relationship beyond the feed, giving fans a repeatable daily touchpoint while creating a low-friction path back to the YouTube channel.
 
-Dodo Chrome Pet explores whether a YouTube cat-channel mascot can extend beyond the video feed into a calm, privacy-conscious daily browser companion.
+If users install Dodo once but quickly uninstall or stop using him, the product is acting more like a novelty. If users keep Dodo active after the initial launch window, the product may have durable companion value.
 
-The product thesis is:
-
-**Companionship first. Productivity second.**
-
-The product is not designed as a productivity app first. It is designed as a calm companion and creator-engagement product, with a lightweight break-reminder feature as a secondary utility layer.
+Because this is also a creator-engagement product, YouTube return behavior is important but secondary. If users click back to YouTube but uninstall quickly, the product has promotion value but not companion value.
 
 ---
 
-## 4. Creator / Audience Problem
+## Creator Audience Problem
 
-The original creator problem was not simply “I want more traffic.” The problem was that audience connection was too dependent on publishing frequency.
+Dodo the Half-Tailed Ragdoll is a YouTube pet channel with 18K+ subscribers. Some viewers ask for frequent updates, but daily content production is not always sustainable.
 
-When Dodo fans asked for more frequent updates, it showed that viewers wanted more daily presence from Dodo than a sustainable video schedule could always provide.
+The product opportunity was to create a companion experience that keeps Dodo present between uploads without requiring a new video every day.
 
-The product opportunity was to create a lightweight daily touchpoint:
-
-- Instead of asking viewers to wait for the next video, let Dodo quietly appear while they browse.
-- Instead of relying only on platform feeds, create a creator-owned experience surface.
-- Instead of making a heavy game or productivity app, create a small emotional companion.
-- Instead of monetizing immediately, launch a free fan benefit and learn from user behavior.
-- Instead of competing only through video format, create a distinctive product extension of the Dodo brand.
-
-The core question was:
-
-**Can a creator-led audience relationship become a lightweight daily product?**
+The goal was not to replace content. The goal was to create a repeatable fan touchpoint that strengthens audience affinity, differentiates the creator brand, and gives viewers a simple path back to the YouTube channel.
 
 ---
 
-## 5. Target Users & Stakeholders
+## Users and Stakeholders
 
-### Primary users
+### Creator / Channel Owner
 
-Existing Dodo subscribers and fans who already recognize Dodo and want more ways to feel connected to the channel.
+Needs a sustainable way to maintain audience touchpoints between uploads and extend the creator brand beyond YouTube.
 
-### Adjacent users
+### Primary User
 
-Cat-content fans who enjoy small delightful browser experiences, even if they first discover Dodo through the Chrome Web Store instead of YouTube.
+Fans or casual viewers who want an optional Dodo presence while browsing.
 
-### Use-context users
+### Distribution Platform
 
-Students, remote workers, and people who spend long periods in Chrome and may enjoy a calm companion or gentle break reminder while browsing or working.
+Chrome Web Store and the Chrome browser environment, where install friction, permissions, and trust matter.
 
-### Creator / business stakeholder
+### Future Business Stakeholders
 
-The Dodo channel as a creator brand, where the product can support audience affinity, differentiation, and a soft path back to the YouTube ecosystem.
-
-### Platform stakeholder
-
-Chrome Web Store users and reviewers, where trust, permissions, privacy, and extension behavior need to be clear and non-invasive.
+Creator-brand sponsors, product partners, or future paid-feature opportunities that depend on audience engagement and trust.
 
 ---
 
-## 6. Strategic Goals
+## Launch Status
 
-### 01. Extend audience connection beyond the YouTube feed
+Dodo Chrome Pet is publicly launched on the Chrome Web Store.
 
-Create a lightweight way for fans to see Dodo between uploads without requiring a daily publishing cadence.
+The extension is newly launched, so the current product brief should not claim proven traction. Post-launch validation will focus on adoption after creator-channel promotion, including Chrome Web Store aggregate signals, YouTube launch-window signals, and voluntary qualitative feedback.
 
-### 02. Differentiate the creator brand
+### Current Launch Claim
 
-Use an interactive browser companion to make the Dodo channel feel more distinctive than typical pet-content channels.
-
-### 03. Launch as a free fan benefit
-
-Reduce adoption friction and learn from user behavior before considering richer paid or premium features.
-
-### 04. Create a soft growth loop
-
-Use Dodo’s daily presence and YouTube entry point to bring users back to the channel and broader social media ecosystem.
-
-### 05. Validate product-led creator expansion
-
-Test whether a creator identity can extend into a small software product, not only into more content.
-
----
-
-## 7. Product Loop
-
-The intended product loop:
-
-1. A viewer discovers Dodo through YouTube Shorts, long-form videos, TikTok, Instagram, Chrome Web Store, or word of mouth.
-2. They install Dodo Chrome Pet because they like Dodo or want a calm browser companion.
-3. Dodo appears during daily browsing and creates repeated emotional exposure.
-4. User-triggered interactions make the companion feel alive without becoming distracting.
-5. The YouTube button and Dodo’s presence remind users to return to the creator ecosystem.
-6. Users click back to YouTube, subscribe, comment, share, request features, or provide feedback.
-7. Feedback informs future versions and new interaction ideas.
-
-The loop is intentionally soft. It should feel like Dodo is present with the user, not like the product is aggressively pushing traffic.
-
----
-
-## 8. Core Product Principle
-
-The most important product principle was:
-
-**Consentful interaction.**
-
-Dodo should be present, but not intrusive. Dodo should stay quiet by default and only do more when the user invites interaction.
-
-This principle shaped the MVP:
-
-- No autoplay sound
-- No surprise meowing
-- No constant movement by default
-- No aggressive mouse following
-- No distracting idle animation as the default state
-- No large UI around Dodo
-- No complex onboarding
-- No login or account system
-- No browsing history collection
-- No page content collection
-- No personal data collection
-- Local preference storage only
-
-The product should feel like a companion, not a distraction.
-
----
-
-## 9. Platform and Distribution Decision
-
-I chose Chrome extension as the V1 platform because the product needed to be easy for fans to install, easy to distribute, and realistic to build as a solo MVP.
-
-This was not only a technical decision. It was also a distribution, adoption, cost, and trust decision.
-
-The product depends on low-friction fan adoption. Dodo’s audience may enjoy seeing Dodo more often, but asking viewers to download a full desktop app would create more hesitation: higher perceived commitment, more trust concerns, more installation steps, and more platform-specific compatibility questions.
-
-A Chrome extension offered a lighter path. It fits the browsing and working context where Dodo is meant to appear, can be distributed publicly through the Chrome Web Store, and gives users a familiar install flow without requiring a full native app.
-
-### Alternatives considered
-
-**Desktop app**
-
-Advantages:
-
-- Dodo could appear across the entire computer, even outside Chrome.
-- The experience could be more persistent than a browser-only product.
-- Future versions could support richer system-level companion behavior.
-
-Disadvantages:
-
-- Higher development cost across operating systems.
-- Higher maintenance burden for a solo MVP.
-- Higher user trust barrier because users may be reluctant to install a full app from a creator.
-- Higher distribution friction compared with a Chrome Web Store listing.
-- More complex app signing, packaging, update, and support requirements.
-- Larger scope than needed to validate the core creator-companion concept.
-
-**Chrome extension**
-
-Advantages:
-
-- Easier for fans to install.
-- Easier to distribute through Chrome Web Store.
-- Lower development and maintenance cost for V1.
-- Natural fit for users who browse, study, or work in Chrome.
-- Familiar install and update flow.
-- Lower perceived commitment than downloading a full desktop app.
-- Good enough to validate whether Dodo can become a daily companion touchpoint.
-
-Disadvantages:
-
-- Dodo only appears while Chrome is open and on pages where the extension can run.
-- The experience is less persistent than a desktop pet.
-- Browser-extension privacy and permissions need to be handled carefully.
-
-### Decision
-
-Use Chrome extension for V1 because it provides the fastest, lowest-friction path to a public, distributable MVP.
-
-The goal was not to build the most powerful version first. The goal was to validate whether fans would install and keep a lightweight Dodo companion enabled before investing in a more expensive desktop app, richer companion system, or paid product layer.
-
----
-
-## 10. MVP Scope
-
-The MVP focused on a small set of interactions that could prove the core concept without overbuilding.
-
-### In scope
-
-- Static idle Dodo by default
-- Dragging Dodo to reposition
-- Right-click action menu
-- YouTube button
-- User-triggered meow
-- User-triggered stretch
-- Sleep / nap action
-- Happy reaction on petting / double click
-- Break reminder
+- Publicly available Chrome Web Store listing
+- Functional V1 browser companion experience
+- Extension popup controls
+- Floating action controls
 - Settings panel
-- Size adjustment
-- Hide / show Dodo
-- Back to corner / reset position behavior
-- Local preference storage
-- Chrome Web Store submission materials
-- Privacy policy and extension disclosure
+- Break reminder flow
+- YouTube channel return path
+- Privacy-conscious V1 scope without invasive user-level analytics
 
-### Non-goals for V1
+### Not Yet Claimed
 
-- Full desktop system-wide pet
-- Walking around the screen
-- Full toy menu
-- Automatic sound
-- Mouse-follow mode
-- Eye-follow mode
-- Playfulness setting
-- Paid features
-- Login / account system
-- User-level analytics tracking
-- Complex onboarding
-- Large UI outside Dodo
-- Full virtual pet game mechanics
-
-V1 was intentionally scoped around calm presence, basic interaction, privacy, and public launch readiness.
+- Proven retention
+- Proven monetization
+- Proven channel lift
+- Validated paid-feature demand
+- Validated long-term companion behavior
 
 ---
 
-## 11. Product Requirements
+## Requirement Highlights
 
-### Requirement 01 — Calm browser companion
+### Requirement 01 — User-Controlled Companion Presence
 
-**Pain point:**  
-Fans may want more frequent Dodo presence than the creator can sustainably provide through daily uploads.
+An always-on mascot can become distracting, especially in work or browsing contexts. V1 keeps the companion optional and reversible: users can show Dodo, hide him, and return him to the corner through simple controls.
 
-**Product requirement:**  
-Provide a lightweight browser companion that lets Dodo appear during daily browsing without requiring users to watch a video.
+### Requirement 02 — Creator-Channel Return Path
 
-**Acceptance criteria:**  
-Dodo appears as a small companion on supported Chrome pages, stays visually calm by default, and can be repositioned by the user.
+A companion product only creates creator value if it connects back to the content ecosystem. The extension includes an Open YouTube action that gives users a direct path back to the Dodo channel.
 
-**Priority:**  
-P0 for V1 because daily presence is the core product experience.
+### Requirement 03 — Recurring Utility Beyond Novelty
+
+A purely cute extension may be installed once and then forgotten. A gentle break reminder gives Dodo a recurring use case while staying aligned with calm companionship.
 
 ---
 
-### Requirement 02 — Consentful interaction model
+## MVP Scope and Non-Goals
 
-**Pain point:**  
-A browser companion can quickly become annoying if it moves, makes sound, follows the cursor, or interrupts the user without permission.
+### MVP Scope
 
-**Product requirement:**  
-Make interactions user-triggered by default and avoid surprise behavior.
+- Chrome extension distribution
+- Browser companion with Dodo visual presence
+- Show / hide / back-to-corner controls
+- Floating action controls
+- Settings panel
+- User-triggered sound / interaction controls
+- YouTube channel CTA
+- Gentle break reminder
+- Privacy-conscious V1 without invasive user-level tracking
 
-**Acceptance criteria:**  
-Dodo does not autoplay sound, does not aggressively follow the cursor, does not constantly animate by default, and only performs meow, stretch, sleep, or happy reactions when triggered by the user or by a configured break reminder.
+### Non-Goals for V1
 
-**Priority:**  
-P0 for V1 because attention trust determines whether users keep the extension enabled.
+- Native desktop app
+- Mobile app
+- Social login or user accounts
+- Fully gamified virtual pet economy
+- Paid feature system
+- Multi-character marketplace
+- Invasive behavioral analytics
+- Browsing history collection
+- Page-content collection
+- User-level behavioral profiles
 
----
+### Scope Rationale
 
-### Requirement 03 — Lightweight creator return path
+V1 validates install friction, daily companion appeal, and channel-return behavior before expanding into richer features or monetized product layers.
 
-**Pain point:**  
-Creator-audience connection usually stays inside platform feeds, making it harder to bring viewers back between uploads.
-
-**Product requirement:**  
-Provide a visible but non-aggressive YouTube entry point inside the Dodo interaction menu.
-
-**Acceptance criteria:**  
-The right-click action menu includes a visually clear YouTube button that opens the Dodo YouTube channel without overwhelming the companion experience.
-
-**Priority:**  
-P0 for V1 because the product is also a creator engagement and channel reactivation experiment.
-
----
-
-### Requirement 04 — Gentle break reminder
-
-**Pain point:**  
-A pure novelty companion may not provide enough recurring utility for users who spend long periods in Chrome.
-
-**Product requirement:**  
-Provide an optional break reminder that feels like Dodo inviting the user to rest rather than a productivity app scolding the user.
-
-**Acceptance criteria:**  
-When break time arrives, Dodo enters a larger stretch/rest mode, the page background is softened, a “Take a rest with me” message appears, a countdown is shown, and a “Back to work” option remains available.
-
-**Priority:**  
-P1 for V1 because it adds daily-use value while staying aligned with the companion concept.
+A native desktop or mobile app could create more persistent presence, but it would also increase development cost, install friction, platform complexity, and trust concerns. A Chrome extension is sufficient to test the core companion hypothesis with a lower-friction distribution path.
 
 ---
 
-### Requirement 05 — Privacy-conscious extension behavior
+## Product Trade-Offs
 
-**Pain point:**  
-Browser extensions can feel sensitive because users may worry about browsing data, page content, personal information, and tracking.
+### 1. Chrome extension over desktop or mobile app
 
-**Product requirement:**  
-Minimize permissions, avoid user-level data collection, and store only local preferences needed for the product experience.
+A desktop or mobile app would increase persistence, but also increase development cost, install friction, platform complexity, and user trust concerns. Chrome extension distribution made V1 easier to install, easier to ship, and sufficient to validate the daily companion concept.
 
-**Acceptance criteria:**  
-The extension does not collect browsing history, page content, personal information, or analytics in V1. Preferences such as Dodo position, size, visibility state, and break reminder interval are stored locally.
+### 2. User-triggered companion over forced presence
 
-**Priority:**  
-P0 for V1 because trust is required for adoption and retention.
+Dodo appears when users choose to summon him. This keeps the experience playful without making it intrusive.
 
----
+### 3. User-triggered sound over autoplay meowing
 
-### Requirement 06 — Consistent Dodo identity
+Unexpected cat sounds can annoy users, especially in work or quiet environments. Dodo’s meow is available only when the user explicitly chooses it.
 
-**Pain point:**  
-The product depends on Dodo being recognizable. Generated assets that make Dodo look like a different Ragdoll would weaken the creator-brand connection.
+### 4. Creator-brand companion over generic virtual pet
 
-**Product requirement:**  
-Maintain Dodo’s visual identity across assets, including blue bicolor coloring, bright blue eyes, white blaze, pink nose, and half-length tail.
+The product is built around Dodo as an existing YouTube mascot, not a generic pet. This keeps the product tied to creator identity, audience affinity, and channel connection.
 
-**Acceptance criteria:**  
-Primary interaction assets should preserve Dodo’s recognizable coloring and half-tail constraint closely enough to feel like the same channel mascot.
+### 5. Break reminder utility over pure novelty
 
-**Priority:**  
-P1 for V1 because asset consistency affects brand recognition, but perfection should not block launch.
+A pure novelty extension may not retain users. A gentle break reminder gives Dodo a recurring use case while staying aligned with calm companionship.
+
+### 6. Privacy over invasive analytics
+
+More analytics would help product learning, but browser-extension trust mattered more for V1. The MVP avoids collecting browsing history, page content, or user-level behavior, and should rely on aggregate store metrics, YouTube analytics, campaign-link proxies, and voluntary feedback.
 
 ---
 
-## 12. Interaction Model
+## Core Interaction Loop
 
-### Default state
+The loop is intentionally simple:
 
-Dodo sits quietly as a static companion. This was deliberate. Early idle-loop concepts created constant movement, which became distracting. The final direction made Dodo calm by default.
+1. Discover Dodo through the creator ecosystem
+2. Install the Chrome extension
+3. Summon Dodo while browsing
+4. Control, hide, resize, or return Dodo to the corner
+5. Use the break reminder as a recurring lightweight utility
+6. Return to the YouTube channel through a clear CTA
 
-### Single click
-
-A single click can trigger a light idle or sit animation, giving the user a small response without making Dodo constantly animated.
-
-### Double click
-
-Double click triggers a happy / petted reaction. Multiple happy assets can rotate so the interaction feels less repetitive.
-
-### Right click
-
-Right click opens a compact arc menu near Dodo’s head. The goal is to keep the interface nearly invisible until the user wants controls.
-
-The action menu includes:
-
-- Meow / sound interaction
-- Stretch
-- YouTube
-- Sleep / nap
-- Settings
-
-The YouTube button should be visually prominent because the extension is also a creator-channel growth loop, while other controls should stay quiet.
-
-### Settings
-
-Settings include practical controls:
-
-- Size
-- Break reminder interval
-- Back to corner
-- Hide Dodo
-
-Earlier ideas such as mouse behavior and playfulness settings were removed because they added complexity without enough value for V1.
-
-### Hide / show
-
-If users hide Dodo, they need a reliable way to bring Dodo back. This is handled through the extension popup or show control because a hidden Dodo cannot be right-clicked.
-
-### Back to corner
-
-This exists because users can drag Dodo. If Dodo is moved somewhere inconvenient, the user needs a predictable way to restore position. “Back to corner” was preferred over “Reset position” because it feels more literal and user-friendly.
+This loop supports both sides of the product hypothesis: fan companionship and creator-channel return behavior.
 
 ---
 
-## 13. Asset Production Strategy
+## Validation Metrics
 
-Asset production was one of the largest product constraints.
+Because V1 intentionally avoids invasive user-level tracking, the product should be evaluated through three layers:
 
-### Initial approach
+1. Chrome Web Store aggregate data
+2. YouTube launch-window signals
+3. Voluntary qualitative feedback
 
-The first approach was to use real Dodo footage and cut Dodo out in DaVinci Resolve.
+If the product shows early traction, a future validation build could add privacy-safe aggregate event tracking. That future tracking should remain aggregate-only and should not collect browsing history, page content, or user-level behavior profiles.
 
-### Problem
+### V1 Launch Metrics
 
-The footage was not filmed on green screen. Clean cutouts were slow and low quality. Dodo’s Ragdoll fur created visible edges, shadows, and masking artifacts, especially when enlarged.
+#### Acquisition
 
-### Revised approach
+- Chrome Web Store listing conversion: installs divided by listing visitors
+- YouTube launch-window conversion proxy: store visits or installs after the launch video, community post, or description CTA
+- Install-friction feedback: comments or messages about confusion, trust concerns, or inability to install
 
-The product shifted to an AI-assisted asset pipeline:
+#### Retention
 
-1. Collect high-quality reference images of Dodo.
-2. Select references with clear face, body, coloring, and posture.
-3. Generate photorealistic green-screen keyframes.
-4. Animate short actions from the keyframes.
-5. Emphasize Dodo’s identity in prompts:
-   - Blue bicolor Ragdoll
-   - Bright blue eyes
-   - Soft cream-white fur
-   - Cool blue-gray ears and tail
-   - White blaze down the nose
-   - Pink nose
-   - Half-length tail
-6. Chroma key the green background.
-7. Export transparent WebM or PNG sequence assets.
-8. Test inside the Chrome extension.
-9. Iterate based on edge quality, scale, tail accuracy, and distraction level.
+Retention matters most because the product hypothesis depends on Dodo remaining useful after the novelty wears off.
 
-### Production learning
+- 7-day or weekly retained active installs, using Chrome Web Store aggregate active-install data as the V1 proxy
+- Uninstall or drop-off signals after the initial launch window
+- Store rating and review sentiment
 
-Dodo’s half-length tail became a real asset constraint. Some AI-generated videos repeatedly added a long or oversized tail, so asset prompts and acceptance criteria needed to emphasize “half-length tail” and avoid making Dodo look like a generic Ragdoll.
+#### Creator Conversion
 
-For V1, the product shipped with the best acceptable assets rather than waiting for perfect asset consistency.
+- Lift in YouTube channel visits or subscribers during the launch window compared with recent baseline
+- Open YouTube CTA performance through campaign-link proxies if feasible
+- Qualitative feedback from YouTube comments, community posts, and store reviews
 
----
+#### Trust and Product Fit
 
-## 14. Product Trade-offs
+- Negative feedback related to distraction, permissions, privacy, or performance
+- Comments describing Dodo as a daily companion, cute browser presence, or recurring reminder
+- Requests for future behaviors, poses, customization, or reminder features
 
-### 01. Calm presence over constant animation
+### Future Privacy-Safe Instrumentation
 
-I chose a static default state because constant idle movement became distracting. The companion should feel present without demanding attention.
+If early adoption justifies a second validation build, I would add aggregate-only event tracking for:
 
-### 02. User-triggered sound over autoplay meowing
+- show / hide / back-to-corner actions
+- break reminder setup or completion
+- Open YouTube CTA clicks
+- weekly companion-control sessions
 
-Unexpected cat sounds can annoy or surprise users, especially in work or quiet environments. Dodo’s meow is available only when the user explicitly chooses it.
+This future instrumentation should remain privacy-safe and aggregate-only. It should not collect browsing history, page content, or user-level behavioral profiles.
 
-### 03. Chrome extension over desktop app
+### North-Star Validation Metric
 
-A desktop app would make Dodo more persistent across the entire computer, but it would also increase development cost, platform complexity, install friction, and user trust concerns. I chose a Chrome extension for V1 because it was easier for fans to install, easier to distribute through Chrome Web Store, and sufficient to validate the core daily companion concept.
+For V1, the north-star validation metric would be 7-day or weekly retained active installs, using Chrome Web Store aggregate active-install data as the V1 retention proxy.
 
-### 04. Creator-brand companion over generic virtual pet
+The core hypothesis is not just whether fans install Dodo once, but whether they continue keeping Dodo as a lightweight browser companion after the novelty wears off.
 
-The product is built around Dodo as an existing YouTube mascot, not a generic pet. This keeps the product tied to creator identity, channel affinity, and audience connection.
+### Secondary Success Metric
 
-### 05. Break reminder utility over pure novelty
+Because this is also a creator-engagement product, YouTube return behavior is a secondary metric.
 
-A pure novelty extension may not retain users. A gentle break reminder gives the product a recurring use case while staying aligned with calm companionship.
+If users click back to YouTube but uninstall quickly, the product has promotion value but not companion value.
 
-### 06. Privacy over invasive analytics
+### How I Would Use These Signals
 
-More analytics would help product learning, but browser-extension trust mattered more for V1. The MVP avoids user-level analytics and relies on aggregate store metrics, YouTube analytics, and qualitative feedback.
+If store visits are healthy but installs are low, I would improve the listing, launch video explanation, and trust messaging before adding features.
 
-### 07. Launch speed over asset perfection
+If installs are healthy but retained active installs drop after week one, Dodo is acting more like a novelty than a companion, so V2 should prioritize recurring utility or lighter re-engagement.
 
-Photorealistic Dodo assets were difficult to produce consistently. I prioritized shippable assets that preserved Dodo’s identity well enough for V1 rather than delaying launch indefinitely.
+If retained installs are healthy but YouTube return behavior is low, the companion may have standalone fan value, but the creator-channel CTA needs clearer timing or placement.
 
-### 08. Focused MVP over more actions
-
-Walking, toy menus, mouse-follow behavior, eye-follow behavior, and more advanced play features were deferred because each action increased asset production, testing, and UX complexity.
+If privacy, permission, or distraction feedback appears, I would reduce permissions and interaction frequency before adding richer analytics or monetized features.
 
 ---
 
-## 15. Privacy and Trust
+## QA Metrics vs. Product Validation Metrics
 
-Privacy was a core product requirement because browser extensions can create user trust concerns.
+Some checks are important for release quality but should not be confused with product validation.
 
-V1 privacy principles:
+### QA / Release Checks
 
-- No user account
-- No login
-- No browsing history collection
-- No page content collection
-- No personal data collection
-- No user-level analytics in MVP
-- No remote code
-- Minimal permissions
-- Local preference storage only
+- Dodo appears correctly on supported pages after user action
+- Extension popup opens reliably
+- Show, hide, and back-to-corner actions work without breaking page layout
+- Floating controls appear and respond correctly
+- Break reminder countdown and back-to-work flow behave correctly
+- YouTube CTA opens the intended channel destination
+- Settings changes persist as expected
+- No unintended autoplay sound
+- No broken image or asset paths
+- No unnecessary permissions
+- No collection of browsing history or page content
 
-Local preferences may include:
+These checks confirm that the extension works as intended.
 
-- Dodo position
-- Dodo size
-- Visibility state
-- Break reminder interval
-- Last selected settings
+### Product Validation
 
-The product was launched as a free V1 product. This reduced adoption friction and avoided mixing early product validation with monetization pressure.
+Product validation asks a different question: whether users actually want to keep Dodo as a companion after the initial novelty.
 
----
-
-## 16. Launch Strategy
-
-Dodo Chrome Pet was designed as a free public extension, not a closed tool only for existing subscribers.
-
-The launch strategy includes:
-
-- Chrome Web Store listing
-- YouTube Shorts announcement
-- YouTube video descriptions
-- Pinned comments
-- YouTube Community post
-- TikTok / Instagram Reels promotion
-- Creator-channel branding
-- Feedback collection from viewers and early users
-
-The launch message can be simple:
-
-**“Now Dodo can sit with you while you browse.”**
-
-The product is both a fan benefit and a creator-growth experiment. It gives existing viewers a daily Dodo touchpoint and gives new users another way to discover the Dodo channel.
+The product should not be judged only by whether it works technically or whether users install it once. The stronger signal is whether users retain it, continue engaging with it, and describe it as a useful or enjoyable daily presence.
 
 ---
 
-## 17. Validation Metrics I Would Track
+## What I Would Validate Next
 
-Because this is a launched creator product with privacy-conscious MVP constraints, validation should combine Chrome Web Store aggregate metrics, YouTube analytics, and qualitative feedback rather than invasive user-level tracking.
+### 1. Install friction
 
-### Acquisition
+Can viewers understand the value proposition and install the extension from a YouTube promotion without extra explanation?
 
-- Chrome Web Store impressions
-- Store page conversion rate
-- Installs
-- Source attribution where available
+### 2. Daily companion appeal
 
-### Activation and engagement
+Do users keep Dodo visible after the first install, or does the novelty fade quickly?
 
-- Percent of installed users who keep the extension enabled
-- Repeat interaction rate with Dodo actions
-- Frequency of meow, stretch, nap, happy reaction, and break reminder usage
-- Break reminder opt-in or usage rate
+### 3. Utility versus cuteness
 
-### Retention
+Does the break reminder meaningfully improve retention compared with a purely visual companion?
 
-- Day 1 / Day 7 extension retention where available
-- Uninstall rate
-- Percent of users who hide Dodo or disable the extension after install
-- Repeat active days after installation where privacy-safe measurement is available
+### 4. Creator conversion
 
-### Creator ecosystem impact
+Does the Open YouTube path create measurable return traffic to the channel?
 
-- YouTube button click-through
-- Subscriber conversion from extension-driven visits where attribution is available
-- Returning viewers from extension-related promotion
-- Comments mentioning the extension
-- Shares or social feedback about the extension
+### 5. Expansion readiness
 
-### Quality and trust
-
-- Complaints about distraction
-- Complaints about sound
-- Complaints about permissions
-- Support issues
-- Asset quality feedback
-- Requests for more actions
-
-The most important early question is not whether the product can generate revenue. It is whether users keep Dodo enabled and perceive the companion as delightful rather than distracting.
+Which future features should stay free, and which could become part of a richer creator-brand product layer?
 
 ---
 
-## 18. Post-Launch Learning Plan
+## Future Opportunities
 
-After the launch video is published on the Dodo YouTube channel, I would evaluate early signals in three waves.
+If retained companion behavior is validated, the long-term opportunity is to turn a creator mascot into a lightweight engagement product: one that can support fan touchpoints, channel return paths, seasonal content drops, and eventually richer creator-brand experiences.
 
-### First 24 hours
+Potential future directions:
 
-Focus on launch response and adoption friction:
+- Additional Dodo poses and animations
+- Seasonal companion states
+- Video-drop reactions
+- Optional customization
+- Privacy-safe aggregate analytics
+- Supporter perks
 
-- Chrome Web Store installs
-- Store listing views or impressions if available
-- Click-through from video description / pinned comment / community post
-- Viewer comments asking how to install or whether the extension works
-- Any immediate trust concerns about permissions or browser behavior
-- Any bug reports around installation, visibility, sound, or page compatibility
-
-### First 7 days
-
-Focus on whether the product creates repeat engagement:
-
-- Install trend after the launch spike
-- Uninstall rate or disable behavior where available
-- Repeat interaction feedback from viewers
-- Break reminder usage or feedback
-- YouTube comments mentioning Dodo Chrome Pet
-- Requests for more actions or specific features
-- Complaints about distraction, audio, permissions, or asset quality
-
-### First 30 days
-
-Focus on whether the product has durable creator-product value:
-
-- Whether the extension continues to attract installs beyond the launch video
-- Whether users ask for V2 features
-- Whether YouTube channel traffic shows extension-related referrals or comments
-- Whether creator-channel affinity appears stronger through qualitative feedback
-- Whether the next product iteration should focus on more actions, better assets, break mode, desktop version, or creator-channel integration
-
-This learning plan keeps measurement realistic. The MVP should not rely on invasive tracking. Early product learning can come from Chrome Web Store aggregate signals, YouTube analytics, viewer comments, and direct user feedback.
+These should remain conditional on validation. V1 should not assume paid-feature demand or monetization before retention and companion value are demonstrated.
 
 ---
 
-## 19. What I Would Validate Next
+## Product Positioning Summary
 
-### 01. Does daily presence increase audience affinity?
+Dodo Chrome Pet is not just a cute browser toy. It is a focused creator-engagement MVP that tests whether a recurring channel mascot can become a low-friction companion product outside the YouTube feed.
 
-Validate whether users who install the extension feel more connected to Dodo between uploads.
-
-### 02. Does the companion remain calm instead of distracting?
-
-Monitor uninstall reasons, hide behavior, qualitative feedback, and complaints about movement, sound, or interruption.
-
-### 03. Does the YouTube entry point support channel reactivation?
-
-Measure YouTube button clicks, traffic from launch promotions, and comments or subscriptions related to the extension.
-
-### 04. Which interactions are worth expanding?
-
-Compare usage and feedback across meow, stretch, nap, happy reaction, and break reminder features before adding more actions.
-
-### 05. Is there demand for richer V2 features?
-
-Use viewer feedback to evaluate toy menus, walking behavior, seasonal actions, study/work companion mode, desktop app version, or paid customization.
-
----
-
-## 20. Future Roadmap
-
-Potential V2 directions:
-
-- More Dodo actions based on user requests
-- Small toy / play menu
-- Occasional walking mode
-- More break reminder customization
-- Study / work companion mode
-- Opt-in analytics with clear user consent
-- Desktop app version
-- More creator-channel integration
-- Seasonal or special Dodo actions
-- Better asset pipeline
-- More realistic audio / video sync
-- User feedback channel
-- Optional paid customization only after free V1 validation
-
-The V1 product direction remains:
-
-**Keep it calm, simple, privacy-conscious, and easy to install.**
-
----
-
-## 21. Key Product Learning
-
-Emotional products still need disciplined product management.
-
-Although Dodo Chrome Pet looks cute on the surface, the hard decisions were product decisions:
-
-- What not to build
-- What to make default
-- How to avoid distraction
-- How to preserve user trust
-- How to keep launch scope realistic
-- How to balance creator growth with user value
-- How to iterate when creative assets are unpredictable
-- How to create a channel growth loop without making the product feel pushy
-
-The strongest PM story behind this project is:
-
-I identified a creator-growth problem, translated it into a browser companion product concept, scoped a privacy-conscious MVP, chose a low-friction distribution platform, built an asset pipeline under constraints, made UX trade-offs based on user attention, launched on the Chrome Web Store, and defined post-launch metrics for iteration.
-
----
-
-## 22. Product Disclaimer
-
-Dodo Chrome Pet is a self-initiated creator product and Chrome extension built as a public MVP.
-
-It is not a large-company product and should not be presented as if it had a full cross-functional team behind it. The product demonstrates solo product ownership, AI-assisted prototyping, MVP scoping, Chrome extension launch readiness, creator-growth thinking, privacy-conscious product design, and iteration under asset-production constraints.
-
-Some product assets may continue to improve over time. Dodo’s visual identity, especially his blue bicolor Ragdoll coloring and half-length tail, remains an important asset-quality criterion for future versions.
+The strongest validation signal is not one-time installs. The strongest signal is retained companion behavior after the initial novelty fades.
