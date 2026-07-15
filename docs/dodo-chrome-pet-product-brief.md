@@ -13,6 +13,8 @@ This is not intended to be a full virtual-pet platform in V1. The goal is to tes
 - Chrome Web Store: https://chromewebstore.google.com/detail/dodo-chrome-pet/eckimpmfpfiapdjaogaaglkgbodjandi
 - GitHub Repository: https://github.com/ruizhangportfolio/dodo-chrome-pet
 - YouTube Channel: https://www.youtube.com/@Dodo_the_Ragdoll
+- Launch Short 1: https://youtube.com/shorts/9Jc5lrQKh9Y
+- Launch Short 2: https://youtube.com/shorts/lX3BzyCdfCU
 
 ---
 
@@ -70,7 +72,7 @@ Creator-brand sponsors, product partners, or future paid-feature opportunities t
 
 Dodo Chrome Pet is publicly launched on the Chrome Web Store.
 
-The extension is newly launched, so the current product brief should not claim proven traction. Post-launch validation will focus on adoption after creator-channel promotion, including Chrome Web Store aggregate signals, YouTube launch-window signals, and voluntary qualitative feedback.
+Two YouTube Shorts introduced the product to the existing Dodo audience on July 11, 2026. The first launch window now provides directional evidence, but it is still too early to claim proven retention, attributed conversion, or business impact.
 
 ### Current Launch Claim
 
@@ -82,6 +84,7 @@ The extension is newly launched, so the current product brief should not claim p
 - Break reminder flow
 - YouTube channel return path
 - Privacy-conscious V1 scope without invasive user-level analytics
+- AI-assisted implementation under my product direction, testing, and release decisions
 
 ### Not Yet Claimed
 
@@ -90,6 +93,7 @@ The extension is newly launched, so the current product brief should not claim p
 - Proven channel lift
 - Validated paid-feature demand
 - Validated long-term companion behavior
+- Attributed YouTube-to-install conversion
 
 ---
 
@@ -105,7 +109,7 @@ A companion product only creates creator value if it connects back to the conten
 
 ### Requirement 03 — Recurring Utility Beyond Novelty
 
-A purely cute extension may be installed once and then forgotten. A gentle break reminder gives Dodo a recurring use case while staying aligned with calm companionship.
+A purely cute extension may be installed once and then forgotten. V1 uses a gentle break reminder to test recurring utility while staying aligned with calm companionship.
 
 ---
 
@@ -140,15 +144,17 @@ A purely cute extension may be installed once and then forgotten. A gentle break
 
 V1 validates install friction, daily companion appeal, and channel-return behavior before expanding into richer features or monetized product layers.
 
-A native desktop or mobile app could create more persistent presence, but it would also increase development cost, install friction, platform complexity, and trust concerns. A Chrome extension is sufficient to test the core companion hypothesis with a lower-friction distribution path.
+A native desktop or mobile app could create more persistent presence, but it would also increase development cost, platform complexity, and trust concerns. A Chrome extension was sufficient to ship and test the desktop companion hypothesis quickly.
+
+The launch also exposed a platform limitation: discovery happens primarily through mobile YouTube, while installation requires desktop Chrome. A viewer may express intent while watching a Short and still lose that intent before returning to a computer. This does not automatically justify a native mobile app, but it creates a mobile form-factor hypothesis that should be tested.
 
 ---
 
 ## Product Trade-Offs
 
-### 1. Chrome extension over desktop or mobile app
+### 1. Chrome extension before desktop or mobile app
 
-A desktop or mobile app would increase persistence, but also increase development cost, install friction, platform complexity, and user trust concerns. Chrome extension distribution made V1 easier to install, easier to ship, and sufficient to validate the daily companion concept.
+A desktop or mobile app would increase persistence, but also increase development cost, platform complexity, and user trust concerns. Chrome extension distribution made V1 faster to ship and sufficient to test the desktop companion concept. The trade-off is a cross-device handoff between mobile discovery and desktop installation.
 
 ### 2. User-triggered companion over forced presence
 
@@ -164,7 +170,7 @@ The product is built around Dodo as an existing YouTube mascot, not a generic pe
 
 ### 5. Break reminder utility over pure novelty
 
-A pure novelty extension may not retain users. A gentle break reminder gives Dodo a recurring use case while staying aligned with calm companionship.
+A pure novelty extension may not retain users, so V1 included a gentle break reminder as a recurring-utility hypothesis. Early launch comments have not validated the reminder as the primary value driver; they point more strongly toward emotional companionship and responsive interaction.
 
 ### 6. Privacy over invasive analytics
 
@@ -187,43 +193,43 @@ This loop supports both sides of the product hypothesis: fan companionship and c
 
 ---
 
-## Validation Metrics
+## Early Launch Evidence
 
-Because V1 intentionally avoids invasive user-level tracking, the product should be evaluated through three layers:
+The evidence below combines public YouTube counters as of July 14, 2026 with Chrome Web Store daily analytics through July 13, 2026. It describes early launch activity, not measured business impact.
 
-1. Chrome Web Store aggregate data
-2. YouTube launch-window signals
-3. Voluntary qualitative feedback
+### Public Launch Response
 
-If the product shows early traction, a future validation build could add privacy-safe aggregate event tracking. That future tracking should remain aggregate-only and should not collect browsing history, page content, or user-level behavior profiles.
+- Two YouTube Shorts reached 3,548 views, 228 likes, and 15 publicly displayed comments.
+- Organic comments showed emotional appeal and requested richer interaction, including petting Dodo and having him chase the cursor.
+- One viewer asked, “How can I bring Dodo to mobile?”, creating an explicit mobile form-factor hypothesis.
 
-### V1 Launch Metrics
+### Chrome Web Store Activity
 
-#### Acquisition
+- During the July 11–13 launch window, the listing recorded 37 page views, 15 install requests, and 3 uninstall requests.
+- Chrome defines installs as install requests and includes successful, unsuccessful, and unknown outcomes. These are not verified successful installs or unique users.
+- Campaign attribution was not configured, so this activity is correlated with the launch window rather than proven YouTube-to-install conversion.
 
-- Chrome Web Store listing conversion: installs divided by listing visitors
-- YouTube launch-window conversion proxy: store visits or installs after the launch video, community post, or description CTA
-- Install-friction feedback: comments or messages about confusion, trust concerns, or inability to install
+### Evidence Boundary
 
-#### Retention
+- Pre-launch install and uninstall activity came from internal testing and screen recording and is excluded from external validation claims.
+- Creator replies and feedback from personal contacts are not treated as external product evidence.
+- Public comment totals include creator activity, so only clearly organic comments inform the qualitative learning.
+- Store ratings and reviews are not used as validation evidence in this brief.
+- Retention remains unproven because the observation window and external-user sample are still too limited.
 
-Retention matters most because the product hypothesis depends on Dodo remaining useful after the novelty wears off.
+### Product Learning
 
-- 7-day or weekly retained active installs, using Chrome Web Store aggregate active-install data as the V1 proxy
-- Uninstall or drop-off signals after the initial launch window
-- Store rating and review sentiment
+- Emotional companionship and direct interaction are the strongest early value signals.
+- The break reminder has not been validated as the primary retention mechanism.
+- Requests to pet Dodo or have him chase the cursor create a testable interaction-depth hypothesis.
+- Mobile-first discovery creates both a platform-expansion question and a cross-device conversion gap.
+- One mobile request is not enough to justify native development; lightweight mobile concepts should be tested first.
 
-#### Creator Conversion
+---
 
-- Lift in YouTube channel visits or subscribers during the launch window compared with recent baseline
-- Open YouTube CTA performance through campaign-link proxies if feasible
-- Qualitative feedback from YouTube comments, community posts, and store reviews
+## Validation Metrics and Next Instrumentation
 
-#### Trust and Product Fit
-
-- Negative feedback related to distraction, permissions, privacy, or performance
-- Comments describing Dodo as a daily companion, cute browser presence, or recurring reminder
-- Requests for future behaviors, poses, customization, or reminder features
+Because V1 intentionally avoids invasive user-level tracking, continued validation should use Chrome Web Store aggregate data, attributed launch links, public launch-window signals, and voluntary qualitative feedback.
 
 ### Future Privacy-Safe Instrumentation
 
@@ -238,25 +244,27 @@ This future instrumentation should remain privacy-safe and aggregate-only. It sh
 
 ### North-Star Validation Metric
 
-For V1, the north-star validation metric would be 7-day or weekly retained active installs, using Chrome Web Store aggregate active-install data as the V1 retention proxy.
+For V1, the north-star validation metric would remain weekly retained active installs, using Chrome Web Store aggregate active-install data as the V1 retention proxy.
 
-The core hypothesis is not just whether fans install Dodo once, but whether they continue keeping Dodo as a lightweight browser companion after the novelty wears off.
+The current launch window is too short to report this result responsibly. The core hypothesis is not just whether fans request an install once, but whether they continue keeping Dodo as a lightweight browser companion after the novelty wears off.
 
 ### Secondary Success Metric
 
 Because this is also a creator-engagement product, YouTube return behavior is a secondary metric.
 
-If users click back to YouTube but uninstall quickly, the product has promotion value but not companion value.
+If attributed return clicks increase but retained installs do not, the product has promotion value but not companion value.
 
 ### How I Would Use These Signals
 
-If store visits are healthy but installs are low, I would improve the listing, launch video explanation, and trust messaging before adding features.
+If store visits are healthy but install requests are low, I would improve the listing, launch video explanation, and trust messaging before adding features.
 
 If installs are healthy but retained active installs drop after week one, Dodo is acting more like a novelty than a companion, so V2 should prioritize recurring utility or lighter re-engagement.
 
 If retained installs are healthy but YouTube return behavior is low, the companion may have standalone fan value, but the creator-channel CTA needs clearer timing or placement.
 
 If privacy, permission, or distraction feedback appears, I would reduce permissions and interaction frequency before adding richer analytics or monetized features.
+
+The next launch should use campaign-specific links and a clean dated cohort boundary so external acquisition can be separated from internal testing and organic store discovery.
 
 ---
 
@@ -290,25 +298,25 @@ The product should not be judged only by whether it works technically or whether
 
 ## What I Would Validate Next
 
-### 1. Install friction
+### 1. Interaction depth
 
-Can viewers understand the value proposition and install the extension from a YouTube promotion without extra explanation?
+Do petting or cursor-responsive behaviors create repeat use without becoming distracting?
 
-### 2. Daily companion appeal
+### 2. Mobile form factor
 
-Do users keep Dodo visible after the first install, or does the novelty fade quickly?
+Is demand best served by a widget, lightweight companion app, or another mobile format before investing in native development?
 
-### 3. Utility versus cuteness
+### 3. Retention after novelty
 
-Does the break reminder meaningfully improve retention compared with a purely visual companion?
+Do users keep Dodo active after the first week once the sample and observation window are large enough to evaluate?
 
-### 4. Creator conversion
+### 4. Attributed discovery-to-install path
 
-Does the Open YouTube path create measurable return traffic to the channel?
+Can campaign-specific links and dated cohorts separate launch content from internal testing and organic store traffic?
 
-### 5. Expansion readiness
+### 5. Creator return behavior and trust
 
-Which future features should stay free, and which could become part of a richer creator-brand product layer?
+Does the channel-return path create value without increasing privacy, permission, performance, or distraction concerns?
 
 ---
 
@@ -318,7 +326,8 @@ If retained companion behavior is validated, the long-term opportunity is to tur
 
 Potential future directions:
 
-- Additional Dodo poses and animations
+- Petting and cursor-responsive behaviors
+- Mobile form-factor concept testing
 - Seasonal companion states
 - Video-drop reactions
 - Optional customization
